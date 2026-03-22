@@ -260,7 +260,7 @@ export default function ResourcesAdmin() {
         )}
       </div>
 
-      {(modal === 'new' || (modal && modal !== 'new')) && (
+      {modal != null && (
         <ResourceModal
           resource={modal === 'new' ? {} : modal as Partial<Resource>}
           onClose={() => setModal(null as unknown as null)}
