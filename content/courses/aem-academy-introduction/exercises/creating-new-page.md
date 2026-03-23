@@ -53,7 +53,7 @@ _'This is a sample meta description used for training purposes.'_
 
 * **Tags (if required)** -- Tags are used internally within AEM to help categorise and organise content across the site. Please leave this section blank.
 
-1. Click '**Create'**
-2. Select '**Open'** to begin editing the page.
+5. Click '**Create'**
+6. Select '**Open'** to begin editing the page.
 
 Your page will now open in the **AEM Page Editor**, where you can begin editing the Components on your pre-defined Template.

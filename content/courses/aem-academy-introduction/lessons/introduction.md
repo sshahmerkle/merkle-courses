@@ -5,29 +5,6 @@ duration: 20 min
 resources:
   - name: Lesson 1 PDF
     file: lesson-1.pdf
-quiz:
-  - question: "What does AEM allow you to do?"
-    options:
-      - "Provide cookie recipes"
-      - "Host and manage multiple websites"
-      - "Manually build pages"
-      - "The src/pages/ directory"
-    answer: 1
-    explanation: "AEM allows users to host and manage multiple websites"
-  - question: "Which of the following is not a core AEM capability?"
-    options:
-      - "Websites (AEM Sites)"
-      - "Digital Asset Management (AEM Assets)"
-      - "Form creation (AEM Forms)"
-      - "Payroll management"
-    answer: 3
-  - question: "What does AEM use as its underlying content repository?"
-    options:
-      - "SQL Server"
-      - "Java Content Repository (JCR) based on Apache Jackrabbit Oak"
-      - "Google Firebase"
-      - "Hadoop"
-    answer: 1
 ---
 
 :::video https://www.youtube.com/watch?v=Xns5rnr0oyU
