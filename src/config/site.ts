@@ -6,9 +6,9 @@
 const siteConfig = {
   // Platform identity
   name: 'Digital Messaging Courses',                          // Short brand name shown in navbar & browser tab
-  logo: 'https://assets.merkle.com/is/content/merkle/merkle-logo-dt?ts=1761647221346&dpr=off',                                 // Optional: URL or path to a logo image (e.g. '/logo.png'). Leave empty to use the default letter icon.
+  logo: '',                                 // Optional: URL or path to a logo image (e.g. '/logo.png'). Leave empty to use the default letter icon.
   logoHasText: true,                        // Set to true if the logo contains text (adds a dark background so white text is visible). Set to false for icon-only logos.
-  favicon: 'https://www.merkle.com/favicon.ico',                              // Optional: URL or path to a favicon (e.g. '/favicon.ico' or 'https://...'). Leave empty to use the browser default.
+  favicon: '',                              // Optional: URL or path to a favicon (e.g. '/favicon.ico' or 'https://...'). Leave empty to use the browser default.
   tagline: 'Adobe Experience Manager Learning Hub',    // Shown on the home page hero
   description:                              // Shown in meta tags and home page sub-heading
     'The official learning hub for Digital Messaging capabilities. ' +
@@ -161,7 +161,7 @@ const siteConfig = {
 
   // Footer
   footer: {
-    copyright: 'Merkle',
+    copyright: '',
     note: 'Digital Messaging UK',
   },
 
