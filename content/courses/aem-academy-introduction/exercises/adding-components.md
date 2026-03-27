@@ -1,6 +1,6 @@
 ---
 title: Adding and Configuring Components
-order: 6.5
+order: 13
 duration: 30 min
 difficulty: medium
 

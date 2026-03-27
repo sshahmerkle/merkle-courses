@@ -1,6 +1,6 @@
 ---
 title: Publishing the Page
-order: 13
+order: 15
 duration: 30 min
 difficulty: medium
 

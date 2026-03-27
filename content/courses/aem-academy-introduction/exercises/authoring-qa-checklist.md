@@ -1,6 +1,6 @@
 ---
 title: Authoring QA Checklist
-order: 12
+order: 14
 duration: 30 min
 difficulty: medium
 
