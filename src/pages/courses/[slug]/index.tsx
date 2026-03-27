@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Layout from '@/components/Layout';
 import CertificateModal from '@/components/CertificateModal';
 import { getAllCourses, getCourse } from '@/lib/courses';
@@ -10,6 +11,7 @@ import { Course, CourseItemMeta } from '@/types';
 interface Props { course: Course }
 
 export default function CoursePage({ course }: Props) {
+  const { basePath } = useRouter ();
   const allItems: CourseItemMeta[] = [...course.lessons, ...course.exercises].sort((a, b) => a.order - b.order);
   const totalItems = allItems.length;
   const { completed, isComplete, count, percent, reset } = useProgress(course.slug, totalItems);
@@ -171,7 +173,7 @@ export default function CoursePage({ course }: Props) {
                   {course.files.map((f) => (
                     <li key={f.file}>
                       <a
-                        href={`/resources/${course.slug}/${f.file}`}
+                        href={`${basePath}/resources/${course.slug}/${f.file}`}
                         download
                         className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-brand-gray-light dark:border-dm-border bg-white dark:bg-dm-surface text-sm text-gray-600 dark:text-gray-300 hover:border-brand-cyan dark:hover:border-blue-500 hover:text-brand-cyan dark:hover:text-blue-400 transition-all"
                       >

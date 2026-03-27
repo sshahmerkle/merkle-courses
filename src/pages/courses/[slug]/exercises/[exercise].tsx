@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Layout from '@/components/Layout';
 import LessonSidebar from '@/components/LessonSidebar';
 import { getAllCourses, getCourseMetadata, getExercise } from '@/lib/courses';
@@ -221,6 +222,7 @@ function HintsPanel({ hints }: { hints: string[] }) {
 // ── Page ─────────────────────────────────────────────────────────────────────
 
 export default function ExercisePage({ exercise, course }: Props) {
+  const { basePath } = useRouter ();
   const totalItems = course.lessons.length + course.exercises.length;
   const { completed, toggle, isComplete, percent } = useProgress(course.slug, totalItems);
   const { notes, setNotes, exportNotes, hasNotes } = useNotes(course.slug, exercise.courseTitle);
@@ -409,7 +411,7 @@ export default function ExercisePage({ exercise, course }: Props) {
                       {exercise.resources.map((r) => (
                         <li key={r.file}>
                           <a
-                            href={`/resources/${exercise.courseSlug}/${r.file}`}
+                            href={`${basePath}/resources/${exercise.courseSlug}/${r.file}`}
                             download
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-brand-gray-light dark:border-dm-border text-sm text-gray-600 dark:text-gray-300 bg-white dark:bg-dm-surface hover:border-brand-cyan dark:hover:border-blue-500 hover:text-brand-cyan dark:hover:text-blue-400 transition-all"
                           >
