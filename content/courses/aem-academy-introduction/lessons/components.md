@@ -39,5 +39,3 @@ If additional variations are required - such as new CTA styles or expanded funct
 If entirely new components are needed to support a specific requirement, these would also be scoped, designed, and developed by the relevant teams before being made available for authors to use in AEM. Content authors work within the existing component library rather than creating new components themselves.
 
 Although many components available "out of the box" are intentionally streamlined, this simplicity supports usability, consistency, and efficient page building.
-
-<video src="/merkle-courses/resources/aem-academy-introduction/video.mp4" width="600" />
