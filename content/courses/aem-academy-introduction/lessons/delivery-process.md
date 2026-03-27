@@ -36,7 +36,7 @@ A typical end-to-end delivery process for a project looks like this:
 
 **Purpose:** Add real content into the built system.
 
-Before authoring begins, the **Merchandising Manager documents ways of working** and ensures required guidance --- such as how-to documentation, checklists, and standards --- is available in a shared location for the authoring team.
+Before authoring begins, the **Merchandising Manager documents ways of working** and ensures required guidance - such as how-to documentation, checklists, and standards - is available in a shared location for the authoring team.
 
 Typical authoring tasks include:
 

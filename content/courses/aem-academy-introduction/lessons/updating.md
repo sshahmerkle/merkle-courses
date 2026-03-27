@@ -4,7 +4,7 @@ order: 10
 duration: 10 min
 ---
 
-AEM is not only for new page creation --- it is also used for ongoing content management.
+AEM is not only for new page creation - it is also used for ongoing content management.
 
 When updating existing pages:
 

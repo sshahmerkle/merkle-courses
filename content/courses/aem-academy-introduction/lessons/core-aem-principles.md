@@ -8,7 +8,7 @@ Before we look at specific features, it's important to understand the core princ
 
 ## 1. Structure First, Content Second
 
-Pages are built using predefined templates and components. Authors don't tend to design layouts from scratch --- they work within structured frameworks that the client has agreed upon.
+Pages are built using predefined templates and components. Authors don't tend to design layouts from scratch - they work within structured frameworks that the client has agreed upon.
 
 ## 2. Reusable, Not Reinvented
 
@@ -16,7 +16,7 @@ Components are built once and reused many times. This keeps the experience consi
 
 ## 3. Device Responsiveness
 
-Components are designed to render appropriately across desktop, tablet, and mobile. Authors focus on content --- the system handles responsive behaviour.
+Components are designed to render appropriately across desktop, tablet, and mobile. Authors focus on content - the system handles responsive behaviour.
 
 ## 4. Governance & Control
 
