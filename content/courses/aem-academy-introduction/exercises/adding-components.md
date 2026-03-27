@@ -21,7 +21,7 @@ Components allow you to build out the content of your page. These are added with
 
 1. Once in the Page Editor, ensure you select the grey button on the top middle of the page (highlighted below). A toolbar should then appear on the left-hand side of the screen. From here select the Plus icon (also highlighted). This will then show the available list of components you can add to your page:
 
-![alt text](merkle-courses/resources/aem-academy-introduction/exercise2.png)
+![alt text](/merkle-courses/resources/aem-academy-introduction/exercise2.png)
 
 2. You will add 4 components to your page and search for their name in the top of the toolbar. The components are (just search for the first word of the below):
 

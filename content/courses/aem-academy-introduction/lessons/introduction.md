@@ -7,8 +7,6 @@ resources:
     file: lesson-1.pdf
 ---
 
-:::video https://www.youtube.com/watch?v=Xns5rnr0oyU
-
 ## Welcome & Overview
 
 Adobe Experience Manager Sites is a powerful content management system that enables teams to create, manage, optimise, and deliver digital experiences across multiple channels.
