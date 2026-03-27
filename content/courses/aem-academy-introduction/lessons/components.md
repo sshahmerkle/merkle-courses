@@ -40,4 +40,4 @@ If entirely new components are needed to support a specific requirement, these w
 
 Although many components available "out of the box" are intentionally streamlined, this simplicity supports usability, consistency, and efficient page building.
 
-<video src="./public/resources/aem-academy-introduction/video.mp4" width="600" />
+<video src="./resources/aem-academy-introduction/video.mp4" width="600" />
