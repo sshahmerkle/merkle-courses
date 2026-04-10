@@ -2,6 +2,22 @@
 title: Working from a Client Brief - Best Practice
 order: 9
 duration: 10 min
+
+quiz:
+    - question: "What should you do if a required component or functionality does not exist when reviewing a brief?"
+      options:
+        - "Build a custom component yourself"
+        - "Continue building the page without it"
+        - "Escalate the requirement early to design and development teams"
+        - "Replace it with an unrelated existing component"
+      answer: 2
+    - question: "Which of the following is part of a proper pre-flight check before starting to build a page?"
+      options:
+        - "Creating new templates during authoring"
+        - "Using placeholder copy and images"
+        - "Ensuring copy, imagery, CTAs, and SEO metadata are finalised"
+        - "Publishing the page to test content"
+      answer: 2
 ---
 
 When you receive a new brief, preparation is key.

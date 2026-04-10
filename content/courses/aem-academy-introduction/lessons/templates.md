@@ -19,7 +19,6 @@ quiz:
         - "Templates control only the visual design, not components"
       answer: 2
 ---
----
 
 Templates are the structural blueprint of a page.
 

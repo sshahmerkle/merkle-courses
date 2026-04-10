@@ -19,7 +19,6 @@ quiz:
         - "Authors can freely change component functionality within AEM"
       answer: 2
 ---
----
 
 If templates are the skeleton, components are the building blocks.
 

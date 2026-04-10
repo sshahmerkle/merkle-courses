@@ -4,21 +4,20 @@ order: 6
 duration: 5 min
 
 quiz:
-  - question: "What does AEM allow you to do?"
-    options:
-      - "Provide cookie recipes"
-      - "Host and manage multiple websites"
-      - "Manually build pages"
-      - "The src/pages/ directory"
-    answer: 1
-    explanation: "AEM allows users to host and manage multiple websites"
-  - question: "Which of the following is not a core AEM capability?"
-    options:
-      - "Websites (AEM Sites)"
-      - "Digital Asset Management (AEM Assets)"
-      - "Form creation (AEM Forms)"
-      - "Payroll management"
-    answer: 3
+    - question: "How should assets be used when building a page in AEM?"
+      options:
+        - "Uploaded directly into each component as needed"
+        - "Stored locally and linked externally"
+        - "Uploaded to AEM Assets, then selected and linked within components"
+        - "Added only after the page is published"
+      answer: 2
+    - question: "Which of the following is considered a best practice when working with assets?"
+      options:
+        - "Uploading multiple versions of the same file for flexibility"
+        - "Skipping naming conventions to save time"
+        - "Optimising images before upload to improve performance"
+        - "Using any file format as long as it displays correctly"
+      answer: 2
 ---
 
 All imagery and digital files are stored in AEM Assets.

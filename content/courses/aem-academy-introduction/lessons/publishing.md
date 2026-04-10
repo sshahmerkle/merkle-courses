@@ -2,6 +2,22 @@
 title: Publishing Workflow
 order: 8
 duration: 15 min
+
+quiz:
+    - question: "What happens after a page is created in AEM?"
+      options:
+        - "It is automatically published to the live environment"
+        - "It is deleted unless approved immediately"
+        - "It moves through a review and approval workflow before publishing"
+        - "It is only visible to developers"
+      answer: 2
+    - question: "Which of the following is part of best practice before submitting a page for publishing?"
+      options:
+        - "Skipping testing to speed up delivery"
+        - "Only reviewing content on desktop devices"
+        - "Checking links, assets, and formatting before submission"
+        - "Publishing first, then fixing issues later"
+      answer: 2
 ---
 
 Creating a page does not automatically make it live.
