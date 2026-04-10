@@ -83,11 +83,17 @@ function getVideoEmbedUrl(url: string): string | null {
 }
 
 function preprocessVideoEmbeds(markdown: string): string {
-  return markdown.replace(/^:::video\s+(https?:\/\/\S+)$/gm, (_, url) => {
+  let result = markdown.replace(/^:::video\s+(https?:\/\/\S+)$/gm, (_, url) => {
     const embedUrl = getVideoEmbedUrl(url);
     if (!embedUrl) return `[${url}](${url})`;
     return `<div class="video-embed"><iframe width="100%" height="420" src="${embedUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>`;
   });
+
+  result = result.replace(/<video\b[\s\S]*?<\/video>/gi, (match) => {
+    return '\n\n<div class="video-embed">${match}</div>\n\n';
+  });
+
+  return result;
 }
 
 function applyTabs(html: string): string {

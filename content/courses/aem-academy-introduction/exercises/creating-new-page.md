@@ -1,6 +1,6 @@
 ---
 title: Creating a new page and selecting a pre-defined template
-order: 12
+order: 5.5
 duration: 30 min
 difficulty: medium
 
