@@ -2,6 +2,23 @@
 title: Templates - The Foundation of a Page
 order: 4
 duration: 20 min
+
+quiz:
+    - question: "What is the primary purpose of a template in AEM?"
+      options:
+        - "To allow authors to freely design page layouts"
+        - "To act as a structural blueprint defining layout, components, and rules"
+        - "To store media assets for reuse"
+        - "To manage publishing permissions"
+      answer: 1
+    - question: "Which statement about templates is correct?"
+      options:
+        - "Authors can modify templates to suit each page"
+        - "Templates are only used for article pages"
+        - "Templates are configured by development teams to maintain structure and governance"
+        - "Templates control only the visual design, not components"
+      answer: 2
+---
 ---
 
 Templates are the structural blueprint of a page.

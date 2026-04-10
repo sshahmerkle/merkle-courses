@@ -2,6 +2,22 @@
 title: Core AEM Authoring Principles
 order: 3
 duration: 5 min
+
+quiz:
+    - question: "What does the principle “Structure First, Content Second” mean in AEM authoring?"
+      options:
+        - "Authors design page layouts from scratch before adding content"
+        - "Content is added without using predefined structures"
+        - "Authors use predefined templates and components to build pages"
+        - "Page structure is determined after publishing"
+      answer: 2
+    - question: "Why are components designed to be reusable?"
+      options:
+        - "To allow authors to create unique layouts every time"
+        - "To reduce the need for governance and control"
+        - "To ensure consistency and scalability across experiences"
+        - "To limit content to only one device type"
+      answer: 2
 ---
 
 Before we look at specific features, it's important to understand the core principles of AEM authoring.

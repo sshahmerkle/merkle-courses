@@ -2,6 +2,22 @@
 title: Cross-Functional End-to-End Delivery Process
 order: 2
 duration: 15 min
+
+quiz:
+    - question: "Where does content authoring typically sit within the delivery lifecycle?"
+      options:
+        - "Before design and development"
+        - "Between development and QA"
+        - "After UAT and go-live"
+        - "Only within the design phase"
+      answer: 1
+    - question: "Which of the following is NOT a typical task performed during the authoring stage?"
+      options:
+        - "Uploading images and media"
+        - "Configuring components"
+        - "Backend integration"
+        - "Setting up SEO metadata"
+      answer: 2
 ---
 
 Before diving deeper into AEM authoring itself, it's helpful to understand how content creation fits into the wider delivery process across multiple teams.

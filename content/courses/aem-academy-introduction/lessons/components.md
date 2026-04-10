@@ -2,6 +2,23 @@
 title: Components - The Building Blocks
 order: 5
 duration: 15 min
+
+quiz:
+    - question: "What is the role of components in AEM authoring?"
+      options:
+        - "To define the overall page structure and layout"
+        - "To act as reusable building blocks with specific purposes and configurations"
+        - "To control user permissions and publishing workflows"
+        - "To replace templates when building pages"
+      answer: 1
+    - question: "Which statement best describes how authors work with components?"
+      options:
+        - "Authors create new components for each page requirement"
+        - "Authors must design separate layouts for mobile and desktop"
+        - "Authors configure existing components with content, imagery, and links"
+        - "Authors can freely change component functionality within AEM"
+      answer: 2
+---
 ---
 
 If templates are the skeleton, components are the building blocks.
