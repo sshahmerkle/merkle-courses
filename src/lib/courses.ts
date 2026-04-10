@@ -83,17 +83,42 @@ function getVideoEmbedUrl(url: string): string | null {
 }
 
 function preprocessVideoEmbeds(markdown: string): string {
-  let result = markdown.replace(/^:::video\s+(https?:\/\/\S+)$/gm, (_, url) => {
+  return markdown.replace(/^:::video\s+(https?:\/\/\S+)$/gm, (_, url) => {
     const embedUrl = getVideoEmbedUrl(url);
     if (!embedUrl) return `[${url}](${url})`;
     return `<div class="video-embed"><iframe width="100%" height="420" src="${embedUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>`;
   });
+}
 
-  result = result.replace(/<video\b[\s\S]*?<\/video>/gi, (match) => {
-    return '\n\n<div class="video-embed">${match}</div>\n\n';
+// Extracts raw <video> HTML from markdown, replacing each with a safe placeholder
+// that remark will wrap in a <p> tag. Prevents remark's HTML block parser from
+// consuming subsequent markdown content into the video block.
+function extractVideoBlocks(markdown: string): { markdown: string; blocks: string[] } {
+  const blocks: string[] = [];
+
+  // Normalise self-closing <video … /> to explicit open/close pairs
+  let md = markdown.replace(/<video\b([^>]*?)\/>/gi, '<video$1></video>');
+
+  // Extract complete <video>…</video> blocks (including multiline / <source> children)
+  md = md.replace(/<video\b[\s\S]*?<\/video>/gi, (match) => {
+    const idx = blocks.length;
+    blocks.push(`<div class="video-embed">${match}</div>`);
+    return `\n\n%%VIDBLOCK_${idx}%%\n\n`;
   });
 
-  return result;
+  // Extract any remaining unclosed <video> tags and add a closing tag
+  md = md.replace(/<video\b[^>]*>/gi, (match) => {
+    const idx = blocks.length;
+    blocks.push(`<div class="video-embed">${match}</video></div>`);
+    return `\n\n%%VIDBLOCK_${idx}%%\n\n`;
+  });
+
+  return { markdown: md, blocks };
+}
+
+function restoreVideoBlocks(html: string, blocks: string[]): string {
+  if (blocks.length === 0) return html;
+  return html.replace(/<p>%%VIDBLOCK_(\d+)%%<\/p>/g, (_, idx) => blocks[parseInt(idx)]);
 }
 
 function applyTabs(html: string): string {
@@ -207,11 +232,12 @@ export async function getCourse(slug: string): Promise<Course | null> {
 
   const raw = fs.readFileSync(indexPath, 'utf-8');
   const { content } = matter(raw);
-  const processed = await remark().use(remarkGfm).use(remarkHtml, { sanitize: false }).process(preprocessVideoEmbeds(content));
+  const { markdown, blocks } = extractVideoBlocks(preprocessVideoEmbeds(content));
+  const processed = await remark().use(remarkGfm).use(remarkHtml, { sanitize: false }).process(markdown);
   const meta = getCourseMetadata(slug);
   if (!meta) return null;
 
-  return { ...meta, content: processHtml(processed.toString()) };
+  return { ...meta, content: restoreVideoBlocks(processHtml(processed.toString()), blocks) };
 }
 
 export async function getLesson(courseSlug: string, lessonSlug: string): Promise<Lesson | null> {
@@ -220,8 +246,9 @@ export async function getLesson(courseSlug: string, lessonSlug: string): Promise
 
   const raw = fs.readFileSync(lessonPath, 'utf-8');
   const { data, content } = matter(raw);
-  const processed = await remark().use(remarkGfm).use(remarkHtml, { sanitize: false }).process(preprocessVideoEmbeds(content));
-  const html = processHtml(processed.toString());
+  const { markdown, blocks } = extractVideoBlocks(preprocessVideoEmbeds(content));
+  const processed = await remark().use(remarkGfm).use(remarkHtml, { sanitize: false }).process(markdown);
+  const html = restoreVideoBlocks(processHtml(processed.toString()), blocks);
   const rt = readingTime(content);
   const meta = getCourseMetadata(courseSlug);
   if (!meta) return null;
@@ -253,8 +280,9 @@ export async function getExercise(courseSlug: string, exerciseSlug: string): Pro
 
   const raw = fs.readFileSync(exercisePath, 'utf-8');
   const { data, content } = matter(raw);
-  const processed = await remark().use(remarkGfm).use(remarkHtml, { sanitize: false }).process(preprocessVideoEmbeds(content));
-  const html = processHtml(processed.toString());
+  const { markdown, blocks } = extractVideoBlocks(preprocessVideoEmbeds(content));
+  const processed = await remark().use(remarkGfm).use(remarkHtml, { sanitize: false }).process(markdown);
+  const html = restoreVideoBlocks(processHtml(processed.toString()), blocks);
   const rt = readingTime(content);
   const meta = getCourseMetadata(courseSlug);
   if (!meta) return null;
