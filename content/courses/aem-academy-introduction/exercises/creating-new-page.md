@@ -8,11 +8,6 @@ objectives:
   - Navigate and find the correct page and path
   - Create the required page
   - Apply correct page properties
-
-hints:
-  - Start by defining the component's props interface with TypeScript
-  - Use a Record<string, string> to map variant names to CSS classes
-  - Don't forget to spread any extra HTML button attributes with ...rest
 ---
 
 Creating a page in AEM begins by selecting the appropriate template. Templates define the overall structure of the page and determine which components can be used.
