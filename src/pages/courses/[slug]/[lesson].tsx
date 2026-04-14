@@ -16,7 +16,7 @@ interface Props {
 }
 
 export default function LessonPage({ lesson, course }: Props) {
-  const { basePath } = useRouter ();
+  const { basePath } = useRouter();
   const totalItems = course.lessons.length + course.exercises.length;
   const { completed, toggle, isComplete, percent } = useProgress(course.slug, totalItems);
   const { notes, setNotes, exportNotes, hasNotes } = useNotes(course.slug, lesson.courseTitle);
@@ -83,6 +83,14 @@ export default function LessonPage({ lesson, course }: Props) {
           panels.forEach((p) => p.classList.toggle('active', p.dataset.panel === idx));
         });
       });
+    });
+  }, [lesson.content]);
+
+  useEffect(() => {
+    const container = contentRef.current;
+    if (!container) return;
+    container.querySelectorAll<HTMLInputElement>('input[type="checkbox"]').forEach((cb) => {
+      cb.removeAttribute('disabled');
     });
   }, [lesson.content]);
 

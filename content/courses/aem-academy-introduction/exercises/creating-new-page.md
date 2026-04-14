@@ -21,14 +21,15 @@ Select the following link to access the AEM environment: link to be provided
 
 ## Steps
 
-1. Navigate to **'Sites'** from the main navigation.
-2. Follow page path: Test Site (AEM-Training). Select the copy, not the tick-box.
-3. Click '**Create'** in the top right navigation (blue button)
-4. Select '**Page'** from the dropdown options.
-5. You will be presented with a list of available templates.
-6. Select Template name 'Content Page' so the tick-box appears.
-7. Click '**Next'** in the top right (blue button)
-8. It will now prompt you to enter the **page properties**:
+1.	Access the following AEM link on your browser: [https://author-p139766-e1420556.adobeaemcloud.com/ui#/aem/sites.html/content/test-site](https://author-p139766-e1420556.adobeaemcloud.com/ui#/aem/sites.html/content/test-site). We will need to grant you access to AEM prior to this task. Please send me an email at [sophie.sharratt@merkle.com](mailto:sophie.sharratt@merkle.com) if you require access to this sandbox environment.
+2. Navigate to **'Sites'** from the main navigation.
+3. Follow page path: Test Site (AEM-Training). Select the copy, not the tick-box.
+4. Click '**Create'** in the top right navigation (blue button)
+5. Select '**Page'** from the dropdown options.
+6. You will be presented with a list of available templates.
+7. Select Template name 'Content Page' so the tick-box appears.
+8. Click '**Next'** in the top right (blue button)
+9. It will now prompt you to enter the **page properties**:
 
 ## Page properties
 
@@ -52,7 +53,7 @@ The title should be clear, descriptive, and aligned with the page topic. For tra
 
 - **Tags (if required)** -- Tags are used internally within AEM to help categorise and organise content across the site. Please leave this section blank.
 
-9. Click '**Create'** in the top right (blue button)
-10. A pop-up will then appear. Select '**Open'** to begin editing the page.
+10. Click '**Create'** in the top right (blue button)
+11. A pop-up will then appear. Select '**Open'** to begin editing the page.
 
 Your page will now open in the **AEM Page Editor**, where you can begin editing the Components on your pre-defined Template.

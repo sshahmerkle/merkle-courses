@@ -169,6 +169,24 @@
     border-color: #10b981;
   }
 
+  /* Task list checkboxes (GFM — - [ ] / - [x] syntax) */
+  .prose-custom .contains-task-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  .prose-custom .task-list-item {
+    list-style: none;
+    padding-left: 0;
+  }
+  .prose-custom .task-list-item::marker {
+    content: '';
+  }
+  .prose-custom .task-list-item input[type="checkbox"] {
+    cursor: pointer;
+    margin-right: 0.4rem;
+    flex-shrink: 0;
+  }
+
   /* Callout / admonition blocks */
   .callout {
     border-radius: 0.75rem;
