@@ -2,9 +2,6 @@
 title: Introduction to Adobe Experience Manager
 order: 1
 duration: 20 min
-resources:
-  - name: Lesson 1 PDF
-    file: lesson-1.pdf
 ---
 
 ## Welcome & Overview

@@ -32,10 +32,10 @@ Components allow you to build out the content of your page. These are added with
 
 3. Search for each and hold and drag each component onto the page one after the other in the above order. A blue arrow will appear on the page of where to drop each component.
 
-<video src="/merkle-courses/resources/aem-academy-introduction/video.mp4" width="800" controls />
+<video src="https://media.githubusercontent.com/media/sshahmerkle/merkle-courses/main/public/resources/aem-academy-introduction/video.mp4" width="800" controls />
 
-4. You can now close the toolbar on the left by selecting the same grey button as shown above on the top of the screen.
-5. To start adding content to each component, simply click on each component and follow the below steps for each component. Add the content of your choice. For the images and copy, search for stock images online.
+1. You can now close the toolbar on the left by selecting the same grey button as shown above on the top of the screen.
+2. To start adding content to each component, simply click on each component and follow the below steps for each component. Add the content of your choice. For the images and copy, search for stock images online.
 
 - **Title**: Select the Pencil icon to add the main title of your page
 - **Text**: Select the Pencil icon to add the main copy of the page. You can also select how to align the copy (left, right or central), include bullet points or numbering or to make the copy bold, italic or underlined.
