@@ -50,7 +50,7 @@ Pre-flight checks. A Pre-Flight checklist will be supplied per project. It is up
 
 Clarifying gaps early prevents rebuilds later. Below you will find a video run-through of the pre-flight checklist. This checklist is a real-life example used for a previous client.
 
-<video src="/merkle-courses/resources/aem-academy-introduction/pre-flight-checklist.mp4?raw=true" width="800" controls />
+<video src="https://media.githubusercontent.com/media/sshahmerkle/merkle-courses/main/public/resources/aem-academy-introduction/pre-flight-checklist.mp4" width="800" controls />
 
 <button src="/merkle-courses/resources/aem-academy-introduction/pre-flight-checklist.xlsx?raw=true">Download Pre-flight Checklist</button>
 
