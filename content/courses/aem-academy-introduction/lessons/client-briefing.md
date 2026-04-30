@@ -3,6 +3,10 @@ title: Working from a Client Brief - Best Practice
 order: 9
 duration: 10 min
 
+resources:
+  - name: Pre Flight Checklist
+    file: pre-flight-checklist.xlsx
+
 quiz:
     - question: "What should you do if a required component or functionality does not exist when reviewing a brief?"
       options:
@@ -52,7 +56,7 @@ Clarifying gaps early prevents rebuilds later. Below you will find a video run-t
 
 <video src="https://media.githubusercontent.com/media/sshahmerkle/merkle-courses/main/public/resources/aem-academy-introduction/pre-flight-checklist.mp4" width="800" controls />
 
-<button src="https://media.githubusercontent.com/media/sshahmerkle/merkle-courses/main/public/resources/aem-academy-introduction/pre-flight-checklist.xlsx">Download Pre-flight Checklist</button>
+[https://media.githubusercontent.com/media/sshahmerkle/merkle-courses/main/public/resources/aem-academy-introduction/pre-flight-checklist.xlsx](Download Pre-flight Checklist)
 
 ## 4. Content Governance
 
