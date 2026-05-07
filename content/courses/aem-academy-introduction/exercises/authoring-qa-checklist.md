@@ -48,3 +48,7 @@ Page displays correctly on the following devices. You can use '**Preview Mode'**
 - [ ] Desktop
 - [ ] Tablet
 - [ ] Mobile preview
+
+Below you will find a video run-through of the Self-QA checklist. This checklist is a real-life example used for a previous client.
+
+<video src="https://media.githubusercontent.com/media/sshahmerkle/merkle-courses/main/public/resources/aem-academy-introduction/self-qa.mp4" width="800" controls />
