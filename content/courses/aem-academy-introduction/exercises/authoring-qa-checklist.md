@@ -57,4 +57,4 @@ Below you will find a video run-through of the Self-QA checklist. This checklist
 
 <video src="https://media.githubusercontent.com/media/sshahmerkle/merkle-courses/main/public/resources/aem-academy-introduction/self-qa.mp4" width="800" controls />
 
-[Download Self QA Checklist](https://media.githubusercontent.com/media/sshahmerkle/merkle-courses/main/public/resources/aem-academy-introduction/self-QA-checklist.xlsx)
+[Download Self QA Checklist](https://sshahmerkle.github.io/merkle-courses/resources/aem-academy-introduction/self-QA-checklist.xlsx)
