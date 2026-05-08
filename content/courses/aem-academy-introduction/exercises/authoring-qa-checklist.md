@@ -8,6 +8,10 @@ objectives:
   - Navigate and find the correct page and path
   - Create the required page
   - Apply correct page properties
+
+resources:
+  - name: Self QA Checklist
+    file: self-QA-checklist.xlsx
 ---
 
 In a real-life situation, before submitting your page for publishing and moving it to the Formal QA workstream, you must first complete a Self QA check of the page. The checklist for each project will be included in the project documentation. For the purpose of this training, please complete the checks below. These represent the types of checks that should be carried out during the Self QA process:
