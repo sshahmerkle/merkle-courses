@@ -20,7 +20,8 @@ function extractToc(html: string): TocItem[] {
   let match;
   while ((match = regex.exec(html)) !== null) {
     const level = parseInt(match[1]) as 2 | 3;
-    const text = match[2].replace(/<[^>]+>/g, '');
+    const raw = match[2].replace(/<[^>]+>/g, '');
+    const text = raw.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCodePoint(parseInt(hex, 16))).replace(/&#(\d+);/g, (_, dec) => String.fromCodePoint(parseInt(dec, 10)));
     toc.push({ id: slugify(text), text, level });
   }
   return toc;
